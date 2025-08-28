@@ -160,6 +160,3 @@ How to get current local time in js
 - 📂 **GitHub Repository**
 - 🌐 **Live Link**
 
----
-
-# Let's Code and Achieve your Dream 🎯
