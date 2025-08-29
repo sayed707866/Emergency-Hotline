@@ -1,6 +1,4 @@
-###Answer the following questions clearly:
-
-###1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+##  What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 Ans:
 1. getElementById("idName")
 It selects one element with the given id. Then return a single element object.
@@ -25,8 +23,7 @@ document.querySelectorAll(".laptop");
 //it finds all elements with class="laptop".
 
 
-
-###2.How do you create and insert a new element into the DOM?
+## How do you create and insert a new element into the DOM?
 Ans:
 Steps to create and insert a new element into the DOM:
 We can create element by using  document.createElement( ) 
@@ -40,10 +37,7 @@ newHeading.textContent = "Foods";
 document.body.appendChild(newHeading);
 // inserts the new heading in the DOM
 Output: A new <h> with "Foods" appears in the body. 
-
-
-
-###3.What is Event Bubbling and how does it work?
+## What is Event Bubbling and how does it work?
 Ans:
 Event bubbling in JavaScript means that when an event happens on a child element, it runs first on that element and then moves up through its parent elements.
 How it works:
@@ -68,9 +62,7 @@ Child clicked
 Parent clicked  
 This shows the event bubbling from child to parent.
 
-
-
-###4.What is Event Delegation in JavaScript? Why is it useful?
+## What is Event Delegation in JavaScript? Why is it useful?
 Ans:
 Event Delegation in JavaScript is a technique where you attach a single event listener to a parent element. This listener manages events for its child elements by using event bubbling.
 Usefulness:
@@ -83,17 +75,19 @@ document.querySelector("ul").addEventListener("click", (e) => {
         console.log("Clicked:", e.target.textContent);
     }
 });
+
 In this example, only one listener on <ul> handles clicks for all <li> elements.
 
-
-
-###5.What is the difference between preventDefault() and stopPropagation() methods?
+## What is the difference between preventDefault() and stopPropagation() methods?
 Ans:
 preventDefault() stops the browser from doing its usual action for an event, such as stopping form submission.
 On the other hand,  stopPropagation() prevents the event from moving up to parent elements in the DOM tree.
+
 Example:
+
 document.querySelector("a").addEventListener("click", (e) => {
     e.preventDefault();   // stops link navigation
     e.stopPropagation();  // prevents bubbling to parent
 });
+
 In this example, clicking the link won’t open the URL (preventDefault) and the event won’t reach its parent (stopPropagation).
